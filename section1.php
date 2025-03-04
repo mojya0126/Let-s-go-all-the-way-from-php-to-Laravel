@@ -9,12 +9,18 @@
 // 'こんにちは'
 // "こんばんは"
 // 'こんば"んは"'
+$array_member = [
+    'name' => '山田',
+    'height' => 180,
+    'hobby' => '野球'
+];
 
-echo 123;
+$array_fruits = ['appple', 'banana', 'cherry'];
 
-echo('こんにちは');
-echo("こんばんは");
+var_dump($array_fruits);
 
-echo('こちらはphpです');
+foreach($array_members as $array_member){
+    echo $array_member['name'];
+}
 
-echo('こちらはPHPです');
+var_dump($test);
