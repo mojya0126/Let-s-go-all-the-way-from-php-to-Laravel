@@ -10,14 +10,23 @@
 // "こんばんは"
 // 'こんば"んは"'
 
+$text = 'あいうえお';
+
+echo mb_strlen($text);
+
 function getChallenge($string){
-    return $string;
+    // 20%の確率で成功
+    if(rand(1, 100) <= 20) {
+        return $string;
+    }
+    return '失敗';
 }
 
+$result = '成功';
 
 echo '<br>';
-getChallenge($result);
-$result = '成功';
+echo getChallenge($result);
+
 
 function test(){
     echo 'test';
@@ -63,5 +72,7 @@ echo '<br>';
 foreach($array_members as $array_member){
     echo $array_member['name'] . "\n";
 }
+
+// var_dump($test);
 
 // var_dump($test);
