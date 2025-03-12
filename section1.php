@@ -16,6 +16,8 @@ echo strlen($text);
 
 echo mb_strlen($text);
 
+echo preg_match('/あいうえお/', $text);
+
 echo $text;
 
 echo str_replace('あいうえお', 'aiueo', $text);
@@ -25,6 +27,10 @@ $str_2 = 'あいうえお、かきくけこ';
 echo '<pre>';
 var_dump(explode('、', $str_2));
 echo '</pre>';
+
+var_dump(substr($str_2, 0, 3));
+
+var_dump(mb_substr('あいうえお', 0, 3));
 
 function getChallenge($string){
     // 20%の確率で成功
