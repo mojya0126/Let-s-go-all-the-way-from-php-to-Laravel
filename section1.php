@@ -12,7 +12,14 @@
 
 $text = 'あいうえお';
 
+echo strlen($text);
+
 echo mb_strlen($text);
+
+echo $text;
+
+echo str_replace('あいうえお', 'aiueo', $text);
+
 
 function getChallenge($string){
     // 20%の確率で成功
