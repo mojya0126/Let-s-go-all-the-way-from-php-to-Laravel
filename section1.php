@@ -20,6 +20,11 @@ echo $text;
 
 echo str_replace('あいうえお', 'aiueo', $text);
 
+$str_2 = 'あいうえお、かきくけこ';
+
+echo '<pre>';
+var_dump(explode('、', $str_2));
+echo '</pre>';
 
 function getChallenge($string){
     // 20%の確率で成功
